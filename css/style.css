@@ -214,6 +214,7 @@ a.btn_01 {
 	text-align: center;
 	text-decoration: none;
 	width: 120px;
+  margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 1rem 1rem;
 	font-weight: bold;
@@ -288,7 +289,7 @@ a.btn_04:hover {
 
 
 .list ul li{
-	margin:0 5px 10px 0;
+	margin:10px 0px 10px 0;
 	display:inline-block;
 }
 
