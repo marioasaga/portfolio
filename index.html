@@ -22,6 +22,7 @@
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
+            <li class="gnav-item"><a href="#design">DESIGN</a></li>
             <li class="gnav-item"><a href="#works">WORKS</a></li>
             <li class="gnav-item"><a href="#skill">SKILL</a></li>
             <li class="gnav-item"><a href="#about">ABOUT</a></li>
@@ -45,26 +46,39 @@
       <!-- design -->
       <section class="design section" id="design">
         <div>
-          <h2 class="title">DESIGN TASTE</h2>
+          <h2 class="title">DESIGN</h2>
           <div class="design">
             <div class="design-item">  
               <div class="design-body">
-                <a href="component.html">
-                 <h3 class="design-name">component</h3>
+                <a href="component.html" class="design-name">
+                  <div class="design-contenets">
+                    <img src="img/compornent.png">
+                    <h3 class="design-maintext">component</h3>
+                  </div>
                 </a>
-                <p class="design-text">Webサイト部品</p>
+                <p class="design-subtext">Webサイト部品</p>
               </div>
             </div>
             <div class="design-item">
               <div class="design-body">
-                <h3 class="design-name">icon</h3>
-                <p class="design-text">準備中</p>
+                <a href="#" class="disabled">
+                  <div class="design-contenets">
+                    <img src="img/icon.png">
+                    <h3 class="design-maintext">icon</h3>
+                  </div>
+                </a>
+                <p class="design-subtext">準備中</p>
               </div>
             </div>
             <div class="design-item">
               <div class="design-body">
-                <h3 class="design-name">gallery</h3>
-                <p class="design-text">準備中</p>
+                <a href="gallery.html" class="design-name">
+                  <div class="design-contenets">
+                    <img src="img/gallery.png">
+                    <h3 class="design-maintext">gallery</h3>
+                  </div>
+                </a>
+                <p class="design-subtext">デザインカンプ</p>
               </div>
             </div>
           </div>
@@ -179,13 +193,12 @@
               <img src="img/about.png" alt="about">
             </p>
             <div class="profile-body">
-              <p>
-                浅賀 まりお
-              </p>
+              <h3 class="profile-name">
+                Mario Asaga
+              </h3>
               <p>
                 東京都在住。フリーランスとしてWeb制作をしております。エステティック・リラクゼーション業界で施術者として15年以上務めておりました。大人女性向けのデザインが得意分野です。お気軽にお問い合わせください。
               </p>
-              
             </div>
           </div>
         </div>
@@ -196,16 +209,103 @@
       <section class="contact section" id="contact">
         <div class="container">
           <h2 class="title">CONTACT</h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">メールまたはSNSにてお願いいたします。
-          </p>
-          <div class="contact-list"></div>
-            <a href="" target="_blank">
-              <img src="img/mail.png" alt="Facebook">
+          <div class="contact-list">
+            <p class="lead">
+              お問い合わせは下記フォームまたはSNSにてお願いいたします。
+            </p>
+            <a href="https://www.instagram.com/a_mario1211?igsh=NG5hbWpnbXZpdW4y&utm_source=qr" target="_blank">
+              <img class="sns" src="img/icon_instagram.png" alt="Instagram">
             </a>
-            <a class="sns" href="https://www.instagram.com/a_mario1211?igsh=NG5hbWpnbXZpdW4y&utm_source=qr" target="_blank">
-              <img src="img/icon_instagram.gif" alt="Instagram">
-            </a>
+          </div>
+          <div class="form">
+            <form>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">お名前<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">電話番号</label>
+                </div>
+                <div>
+                  <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
+                </div>
+                <div>
+                  <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+                  <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
+                  <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
+                </div>
+              </div>
+              <div>
+                <div class="contact-heading">
+                  <label class="contact-label">個人情報の取り扱い</label>
+                </div>
+                <div>
+                  <details>
+                    <summary>お問い合わせフォームの個人情報の取り扱いについて</summary>
+                    <div>
+                      <span>１．組織の名称又は氏名</span><br>
+                      浅賀まりお<br>
+                      <br>
+                      <span>２．個人情報保護管理者（若しくはその代理人）の連絡先<br>
+                      メールアドレス：571211mario@gmail.com<br>
+                      <br>
+                      <span>３．個人情報の利用目的</span><br>
+                      ・本サービス及び本サービスに関連する情報の提供又はそれらに関する連絡のため<br>
+                      ・ユーザーの本人確認のため<br>
+                      ・サービスのご案内のため<br>
+                      <br>
+                      <span>４．個人情報の取り扱い業務の委託</span><br>
+                      個人情報の取扱業務の全部または一部を外部に業務委託する場合があります。<br>
+                      その際、本サービスは、個人情報を適切に保護できる管理体制を敷き実行していることを条件として<br>
+                      委託先を厳選したうえで、機密保持契約を委託先と締結し、お客様の個人情報を厳密に管理させます。<br>
+                      <br>
+                      <span>５．個人情報の開示等の請求</span><br>
+                      お客様は、本サービスに対してご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、当社問合わせ窓口に申し出ることができます。<br>
+                      その際、弊社はお客様ご本人を確認させていただいたうえで、合理的な期間内に対応いたします。<br><br>
+                      <span>６．個人情報を提供されることの任意性について</span><br>
+                      お客様がご自身の個人情報を弊社に提供されるか否かは、お客様のご判断によりますが、もしご提供されない場合には、適切なサービスが提供できない場合がありますので予めご了承ください。
+                    </div>
+                  </details>
+                  <input type="checkbox" name="agree">
+                  <span>ご同意いただける場合は、チェックをしてください。</span>
+                </div>
+                <input type="submit" value="送信する" class="submit_btn">
+              </div>
+            </form>
           </div>
         </div>
       </section>
