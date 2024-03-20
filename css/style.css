@@ -420,7 +420,7 @@ a.btn_05:hover {
 ---------------------------------*/
 .works-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content:center; 
   margin-bottom: -40px;
 }
 
